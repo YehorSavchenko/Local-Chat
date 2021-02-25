@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:id="@+id/textView_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adding new contact"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_inf"
+        app:layout_constraintTop_toBottomOf="@+id/text_ip" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name..."
+        app:layout_constraintEnd_toEndOf="@+id/textView_inf"
+        app:layout_constraintStart_toStartOf="@+id/textView_inf"
+        app:layout_constraintTop_toBottomOf="@+id/textView_inf"
+        android:layout_width="0dp"
+        />
+
+    <EditText
+        android:id="@+id/text_ip"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="IP..."
+        app:layout_constraintEnd_toEndOf="@+id/textView_inf"
+        app:layout_constraintStart_toStartOf="@+id/textView_inf"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_inf"
+        app:layout_constraintTop_toBottomOf="@+id/text_ip" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

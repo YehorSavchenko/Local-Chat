@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainActivity.MainActivity">
+
+    <Button
+        android:id="@+id/button_send"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="36sp"
+        app:icon="@android:drawable/ic_menu_send"
+        app:iconSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/text_message"
+        android:backgroundTint="@color/purple_200"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Message..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_send"
+        app:layout_constraintTop_toTopOf="@+id/button_send"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/button_add"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:textSize="36sp"
+        app:icon="@android:drawable/ic_menu_add"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/ip_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contextClickable="false"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbHorizontal="@color/purple_200"
+        android:scrollbars="vertical"
+        android:shadowColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ip_spinner" />
+
+    <TextView
+        android:id="@+id/my_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+
+        android:text="My IP: "
+        app:layout_constraintBottom_toBottomOf="@id/button_add"
+        app:layout_constraintStart_toEndOf="@+id/button_add"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/button_copy"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:icon="?attr/actionModeCopyDrawable"
+        app:iconSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/my_ip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_share"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:icon="@android:drawable/ic_menu_share"
+        app:iconSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/button_copy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:onClick="ScanButton"
+        android:textSize="12sp"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:iconSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/button_share"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

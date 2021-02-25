@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocalChat</string>
+    <string name="send_btn">Send</string>
+</resources>
